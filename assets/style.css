@@ -1,0 +1,119 @@
+/* Import font Google */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* Warna background gradien lembut */
+}
+
+header, footer, nav, main, aside, article {
+    border-radius: 8px; /* Batasan sudut membulat */
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk elemen */
+}
+
+header {
+    background: linear-gradient(to right, #1f77ff, #52a0ff); /* Warna gradien biru untuk header */
+    text-align: center;
+    color: white;
+}
+
+footer {
+    background-color: #1f77ff; /* Warna footer lebih solid */
+    color: white;
+}
+
+nav {
+    background-color: #3a86ff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700; /* Warna hover emas */
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#content {
+    flex: 3;
+    background: white; /* Warna latar belakang artikel putih */
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2 {
+    color: #3a86ff;
+    border-bottom: 2px solid #1f77ff;
+    padding-bottom: 5px;
+}
+
+article p {
+    line-height: 1.6;
+}
+
+aside {
+    flex: 1;
+    background: white;
+    background: linear-gradient(to bottom right, #ffffff, #f0f4f8);
+    padding: 20px;
+    text-align: center;
+}
+
+aside h3 {
+    color: #3a86ff;
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #1f77ff, #3a86ff);
+}
+
+/* Efek tambahan untuk gambar */
+aside img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan gambar */
+    transition: transform 0.3s ease;
+}
+
+aside img:hover {
+    transform: scale(1.05); /* Efek zoom ketika di-hover */
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    #content, aside {
+        flex: 1;
+        margin: 0;
+    }
+}
